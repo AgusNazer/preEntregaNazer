@@ -1,13 +1,12 @@
 import React from "react";
-
 import Item from './Item'
-import products from "./mock/products";
 
 
 
 
 
-const ItemList = ({productList}) => {
+
+export const ItemList = ({productList}) => {
 
   
     

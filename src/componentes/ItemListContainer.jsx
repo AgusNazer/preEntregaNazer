@@ -19,13 +19,14 @@ const [productList, setProductList] = useState([])
 
 const getProducts = ()=> new Promise((resolve, reject)=>{
   setTimeout(()=>resolve(products),2000)
+  
 })
 
 useEffect(()=>{
 
   if (idCategory){
     getProducts()
-    .then(SHOES => setProductList(products.filter(p => p.category ===idCategory)))
+    .then(products => setProductList(products.filter(p => p.category ===idCategory)))
     .catch(error => console.log(error))
   } else {
     getProducts()
