@@ -1,9 +1,10 @@
-import React from 'react'
+/* import React from 'react'
 
-// Este layout lo agregue solo para ir probando, no estaba en la consigna. 
+
 const Layout = () => {
   return (
     
+   
         <div class="bg-white">
         <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <h2 class="sr-only">Products</h2>
@@ -45,7 +46,8 @@ const Layout = () => {
         </div>
         </div>
     </div>
+    
   )
 }
 
-export default Layout
+export default Layout */

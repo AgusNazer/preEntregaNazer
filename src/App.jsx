@@ -5,24 +5,30 @@ import NavBar from './componentes/NavBar'
 import './componentes/NavBar.css'
 import ItemListContainer from './componentes/ItemListContainer'
 import './componentes/ItemListContainer.css'
-import Layout from './componentes/Layout'
+import ItemDetailContainer from './componentes/ItemDetailContainer' 
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './componentes/ItemCount.css'
+import './componentes/Item.css'
+import './componentes/ItemList.css'
 
 
 function App() {
   
 
-  return (
-    <div>
-      <div className='app'>
-        <NavBar/>
-        <ItemListContainer greeting={' Welcome to Shoos Ecommerce'} />
-      </div>
-      <div>
-      <Layout/>
-      </div>  
-    </div>
-
-  )
-}
-
-export default App
+    return (
+      <BrowserRouter>
+          <div className='app'>
+         
+            <NavBar/>
+        <Routes>
+           <Route path='/preEntregaNazer/' element={<ItemListContainer greeting='Welcome to shoos shop' />} />  
+           <Route path='/preEntregaNazer/item/:id' element={<ItemDetailContainer />}/> 
+           <Route path='/preEntregaNazer/category/:idCategory' element={<ItemListContainer/>}/>
+        </Routes>
+        </div>
+      </BrowserRouter>
+    
+      )
+    }
+    
+    export default App

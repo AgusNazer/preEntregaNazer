@@ -8,3 +8,10 @@
     color: rgb(103, 47, 150);
     cursor: pointer;
 }
+.item_list_div{
+    text-align: center;
+    border: 1px solid red;
+}
+.products_p{
+    text-align: center;
+}

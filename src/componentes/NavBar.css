@@ -6,6 +6,15 @@
     display: block;
     justify-content: space-between;
 }
-.categorias{
+
+.item__list{
+    color: red;
+}
+
+.categories{
     
+    border: 1px solid red;
+
+    
+
 }
