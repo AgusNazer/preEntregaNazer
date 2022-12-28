@@ -1,19 +1,30 @@
 import React from 'react'
+
 import { Link } from 'react-router-dom'
+
 import CartWidget from './CartWidget'
 
 
 const NavBar = () => {
+
+
+
   return (
     <div className='navBar__Flex'>
         <div className="navbar bg-green-100">
         <div className="flex-1">
             <Link to='/preEntregaNazer/' className="btn btn-ghost normal-case text-xl a__shoos__text">Shoos!</Link>
+            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                
+                <Link to='/preEntregaNazer/' ><img className='nike__celu' src='https://www.tradeinn.com/m/13812/138126109/nike-zapatillas-metcon-7.jpg'/></Link>
+                </div>
+            </label> 
             <div className="dropdown dropdown-end">
 
 
-            <ul className='nav-items'>
-                <li>
+            <ul className='nav-items navbar m-1 text-lg font-medium  italic'>
+                <li className='space-x-1.5 '>
                   <Link to= {'/preEntregaNazer/category/Running'} ><p>Running</p></Link>
                   <Link to= {'/preEntregaNazer/category/Crossfit'} ><p>Crossfit</p></Link>
                   <Link to= {'/preEntregaNazer/category/Trainning'} ><p>Training</p></Link>
@@ -22,24 +33,12 @@ const NavBar = () => {
                 </li>
             </ul>
             
-            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                <div className="w-10 rounded-full">
-                
-                <Link to='/preEntregaNazer/' ><img className='nike__celu' src='https://www.tradeinn.com/m/13812/138126109/nike-zapatillas-metcon-7.jpg'/></Link>
-                </div>
-            </label> 
+            
            
            
             
            
-            {/* <ul  tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box ">
             
-                <li><a>Running</a></li>
-                <li><a>Crossfit</a></li>
-                <li><a>Training</a></li>
-                <li><a>Urban</a></li>
-                
-            </ul> */}
             </div>
         </div>
         <div className="flex-none">
@@ -49,7 +48,8 @@ const NavBar = () => {
         
             <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                <div className="w-10 rounded-full">
+                <div className="w-10 rounded-full">         
+
                 <img src="https://thumbs.dreamstime.com/b/l%C3%ADnea-icono-del-negro-avatar-perfil-de-usuario-121102131.jpg" />
                 </div>
             </label>

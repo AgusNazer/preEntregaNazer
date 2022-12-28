@@ -258,3 +258,26 @@ const ItemDetailContainer = () => {
 }
 
 export default ItemDetailContainer
+
+
+//////////////////////CartContext
+
+import { useContext } from "react";
+import { createContext } from "react";
+import { useState } from "react";
+
+export const contexto = createContext()
+
+/* export const useCartContext = () =>{
+    const CartContext = useContext(contexto)
+    return CartContext
+} */
+
+
+export const CartContext = ({children}) => {
+    return(
+        <contexto.Provider value={{nombre: 'Pedro'}}>
+            {children}
+        </contexto.Provider>
+    )
+}
